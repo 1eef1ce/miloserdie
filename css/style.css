@@ -1,0 +1,529 @@
+@font-face {
+    font-family: 'Neucha';
+    src: url('../font/NeuchaRegular.eot?') format('eot'),
+    url('../font/NeuchaRegular.woff') format('woff'),
+    url('../font/NeuchaRegular.ttf')  format('truetype'),
+    url('../font/NeuchaRegular.svg#Neucha') format('svg');
+}
+@font-face {
+    font-family: 'Chocogirl';
+    src: url('../font/Chocogirl.eot?') format('eot'),
+    url('../font/Chocogirl.woff') format('woff'),
+    url('../font/Chocogirl.ttf')  format('truetype'),
+    url('../font/Chocogirl.svg#Chocogirl') format('svg');
+}
+body {
+    font-family: Neucha;
+    font-size: 16px;
+    color: #1b1b1b;
+}
+a {
+    font-family: Neucha;
+    color: #0e7c9b;
+}
+h2 {
+    margin: 0 0 25px;
+}
+h4 {
+    font-size: 20px;
+    margin: 25px 0 10px;
+}
+input, button {
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: 20px;
+}
+a:focus, a:hover {
+    color: #0e7c9b;
+    text-decoration: none;
+}
+.container {
+    padding: 0;
+}
+header .logo img {
+    margin: 18px 0;
+    max-width: 100%;
+    max-height: 89px;
+}
+footer .logo img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+.navbar {
+    border: 0;
+}
+.nav>li {
+    display: inline-block;
+}
+/**
+#navbar ul li a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background: none;
+}
+**/
+.custom-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.custom-flex > div {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+}
+.dash {
+    background: url("../img/dash.png") no-repeat center;
+    background-size: contain;
+    width: 14px;
+    height: 10px;
+    display: inline-block;
+}
+.help {
+    background: url("../img/bg-o1.png") repeat-x center;
+    max-height: 479px;
+    color: #fff;
+    text-align: center;
+}
+.scroll {
+    background: url("../img/bg-b1.png") repeat-x center;;
+    height: 170px;
+    font-family: Chocogirl;
+    padding: 20px 0;
+}
+.scroll h1 {
+    margin: 0 0 35px;
+}
+.scroll input, .scroll button {
+    font-family: Neucha;
+}
+.help .title, .med .title, .stat .title, .projects .title, .children .title, .news .title, .subscribe .title {
+    font-size: 56px;
+    text-align: center;
+    line-height: 1;
+}
+.help .title {
+    letter-spacing: 5px;
+    padding: 75px 15px 85px;
+}
+.med .title {
+    color: #0a6f89;
+    padding: 28px 15px 40px;
+}
+.stat .title {
+    color: #358297;
+    padding: 17px 15px 65px;
+}
+.projects .title {
+    color: #0a6f89;
+    padding: 23px 15px 40px;
+}
+.children .title {
+    color: #fff;
+    padding: 75px 15px 40px;
+}
+.news .title {
+    color: #317d93;
+    padding: 40px 15px 50px;
+}
+.subscribe .title {
+
+}
+.donation {
+    border-right: 2px dotted;
+}
+.help a {
+    color: #fff;
+    text-decoration: underline;
+}
+.donation input {
+    background: url("../img/input-short.png") no-repeat center;
+    background-size: contain;
+    width: 166px;
+    height: 52px;
+    color: #1b1b1b;
+    text-align: center;
+}
+.donation button {
+    background: url("../img/button1.png") no-repeat center;
+    background-size: contain;
+    width: 185px;
+    height: 50px;
+}
+.register button {
+    background: url("../img/button-long.png") no-repeat center;
+    background-size: contain;
+    width: 292px;
+    height: 49px;
+}
+.med {
+    background: #f7f7f7;
+    padding: 30px 0 24px;
+}
+.curl {
+    background: url("../img/curl.png") no-repeat 15px;
+    height: 195px;
+    font-family: Arial;
+    font-size: 16px;
+    padding-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+.about {
+    background: url("../img/arrow-b.png") no-repeat left;
+    padding: 10px 10px 10px 45px;
+    display: inline-block;
+}
+.more {
+    margin-top: 25px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: underline;
+}
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+.stat {
+    color: #c9401c;
+    text-align: center;
+    padding-bottom: 135px;
+}
+.stat h2, .stat h4 {
+    margin: 0;
+}
+.stat h2 span {
+    font-size: 70px;
+    line-height: 1.6;
+}
+.border {
+    border-right: 2px dotted #0e7c9b;
+}
+.projects {
+    background: #f7f7f7;
+    padding-bottom: 100px;
+}
+.projects .container {
+    background: inherit;
+}
+.project img {
+    max-width: 100%;
+    max-height: 215px;
+    margin-top: 60px;
+}
+.project a {
+    font-size: 20px;
+}
+.subtitle {
+    text-align: center;
+    font-family: Arial;
+    line-height: 1.8;
+}
+.children {
+    background: url("../img/bg-o2.png") repeat-x center;
+    max-height: 810px;
+    padding-bottom: 73px;
+    color: #fff;
+}
+.kiwi {
+    position: absolute;
+    left: 0;
+    top: 58px;
+    margin-left: 27px;
+}
+.child {
+    padding-top: 75px;
+    padding-bottom: 45px;
+}
+.child > div:first-child {
+    position: relative;
+    text-align: center;
+}
+.child img {
+    width: 100%;
+}
+.child-img {
+    position: absolute;
+    background: no-repeat center;
+    background-size: contain;
+    width: 90%;
+    height: 90%;
+    top:4%;
+    left:5%;
+    z-index: 1;
+    border-radius: 200px;
+}
+.child h4 {
+    margin: 10px 0;
+}
+.child .about {
+    background: url("../img/arrow-w.png") no-repeat left;
+    color: #fff;
+}
+.news {
+    padding-bottom: 60px;
+}
+.news-main img {
+    max-width: 100%;
+}
+.news-main h2 {
+    margin-bottom: 20px;
+    color: #317d93;
+}
+.news-main p {
+    font-family: Arial;
+}
+.news-other img {
+    max-width: 100%;
+    max-height: 215px;
+    margin-top: 30px;
+}
+.news-other h4 {
+    color: #317d93;
+}
+.subscribe {
+    background: url("../img/bg-b2.png") repeat-x center;
+    max-height: 139px;
+    color: #fff;
+    padding: 40px 0;
+}
+.subscribe input {
+    background: url("../img/input-long.png") no-repeat center;
+    background-size: contain;
+    width: 266px;
+    height: 52px;
+    padding:0 20px;
+    color: #1b1b1b;
+}
+.subscribe button {
+    background: url("../img/button2.png") no-repeat center;
+    background-size: contain;
+    width: 177px;
+    height: 50px;
+}
+footer {
+    padding-bottom: 30px;
+}
+footer .text-right {
+    font-size: 20px;
+    color: #d36a51;
+}
+.soc {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+/** 320px begin**/
+@media (min-width:320px) and (max-width:479px) {
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 21px;
+        margin: 40px 0 20px;
+    }
+    h4 {
+        font-size: 14px;
+        margin: 22px 0 42px;
+    }
+    input, button {
+        font-size: 14px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .dash {
+        width: 8px;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .nav>li>a {
+        padding: 10px 2px;
+    }
+    .help {
+        background: url("../img/bg-o1-m.png") repeat-x center;
+        max-height: 651px;
+    }
+    .help .title, .med .title, .stat .title, .projects .title, .children .title, .news .title, .subscribe .title {
+        font-size: 30px;
+    }
+    .help .title {
+        letter-spacing: 0;
+        padding: 35px 15px 40px;
+        border-bottom: 2px dotted;
+    }
+    .help .title img {
+        width: 30px;
+    }
+    .med .title {
+        padding: 0 0 20px;
+    }
+    .stat .hidden-lg img {
+        transform: rotate(25deg);
+        width: 112px;
+    }
+    .stat .title {
+        padding: 0 0 35px;
+        margin-top: -15px;
+    }
+    .projects .title {
+        padding: 0 0 15px;
+    }
+    .children .title {
+        padding: 35px 0 15px;
+    }
+    .news .title {
+        padding: 3px 0 18px;
+    }
+    .subscribe .title {
+        padding: 0 0 20px;
+    }
+    .donation {
+        border-right: 0;
+        border-bottom: 2px dotted;
+    }
+    .donation input {
+        width: 122px;
+    }
+    .donation button {
+        width: 122px;
+    }
+    .register button {
+        width: 220px;
+    }
+    .med {
+        padding: 0 0 11px;
+    }
+    .curl {
+        background: url("../img/curl.png") repeat-y 12px 0;
+        height: 250px;
+        font-size: 12px;
+        padding-left: 40px;
+        margin-bottom: 35px;
+    }
+    .about {
+        font-size: 14px;
+    }
+    .more {
+        margin-top: 25px;
+    }
+    .stat {
+        padding-bottom: 50px;
+    }
+    .stat h2, .stat h4 {
+        margin: 0;
+    }
+    .stat h2 span {
+        font-size: 55px;
+        line-height: inherit;
+    }
+    .border {
+        border-right: 0;
+    }
+    .projects {
+        padding: 11px 0 0;
+    }
+    .projects .container {
+        background: #fff;
+        padding-bottom: 40px;
+    }
+    .project img {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .project a {
+        font-size: 14px;
+    }
+    .subtitle {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .children {
+        background: url("../img/bg-o2-m.png") repeat-x center;
+        max-height: 996px;
+        padding-bottom: 25px;
+    }
+    .kiwi {
+        position: absolute;
+        left: 0;
+        top: 65px;
+        margin-left: 15px;
+        width: 60px;
+    }
+    .children .subtitle {
+        margin-bottom: 30px;
+    }
+    .child {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+    .child img {
+        width: 100%;
+    }
+    .child-img {
+        position: absolute;
+        background: no-repeat center;
+        background-size: contain;
+        width: 90%;
+        height: 90%;
+        top:4%;
+        left:5%;
+        z-index: 1;
+        border-radius: 200px;
+    }
+    .child h4 {
+        margin: 10px 0;
+    }
+    .child .about {
+        background: url("../img/arrow-w.png") no-repeat left;
+        color: #fff;
+    }
+    .news {
+        padding: 35px 0;
+    }
+    .news-main img {
+        width: 100%;
+    }
+    .news-main h2 {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .news-other img {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .news-other h4 {
+        margin: 10px 0 5px;
+    }
+    .subscribe {
+        background: url("../img/bg-b2-m.png") repeat-x center;
+        max-height: 209px;
+        padding: 37px 0 47px;
+    }
+    .subscribe input {
+        width: 166px;
+        height: 40px;
+    }
+    .subscribe button {
+        width: 82px;
+        height: 40px;
+    }
+    footer {
+        padding-top: 17px;
+    }
+    footer .logo img {
+        margin-top: 0;
+    }
+    footer .text-right {
+        font-size: 14px;
+    }
+    .soc img {
+        width: 35px;
+    }
+}
+/** 320px end**/
